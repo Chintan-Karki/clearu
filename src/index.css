@@ -44,7 +44,7 @@ button, select, a.button {
   border: 3px solid #2c3e50 !important;
   box-shadow: 4px 4px 0 #2c3e50 !important;
   transition: all 0.2s ease;
-  background: #fff !important;
+  /* background: #fff !important; */
   transform: translate(-2px, -2px);
 }
 
