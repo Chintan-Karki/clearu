@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Retro background pattern */
+.bg-checkered {
+  background-image: linear-gradient(45deg, #ff6b6b 25%, transparent 25%),
+    linear-gradient(-45deg, #ff6b6b 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #ff6b6b 75%),
+    linear-gradient(-45deg, transparent 75%, #ff6b6b 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-color: #4ecdc4;
+}
+
+.mask {
+  mask-image: linear-gradient(to right, black 0%, black 100%);
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  transition: mask-size 0.2s;
+  transition-delay: 0.7s;
+}
+
+.mask:hover {
+  mask-size: 0%;
+  transition-delay: 0s;
+}
+
+.mask.processing {
+  mask-size: 0%;
+  transition-delay: 0s;
+  border: 2px solid #ff6b6b;
+}
+
+/* Retro background gradient */
+body {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  color: #2c3e50;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Retro button styles */
+button, select, a.button {
+  border: 3px solid #2c3e50 !important;
+  box-shadow: 4px 4px 0 #2c3e50 !important;
+  transition: all 0.2s ease;
+  background: #fff !important;
+  transform: translate(-2px, -2px);
+}
+
+button:hover, select:hover, a.button:hover {
+  transform: translate(0, 0);
+  box-shadow: 0px 0px 0 #2c3e50 !important;
+}
+
+/* Retro input styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ff6b6b;
+  height: 8px;
+  border-radius: 4px;
+  border: 2px solid #2c3e50;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #4ecdc4;
+  border: 3px solid #2c3e50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #4ecdc4;
+  border: 3px solid #2c3e50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Retro card styles */
+.bg-white {
+  background: #fff !important;
+  border: 3px solid #2c3e50 !important;
+  box-shadow: 8px 8px 0 #2c3e50 !important;
+}
+
+/* Retro text styles */
+h1, h2, h3 {
+  color: #2c3e50;
+  text-shadow: 2px 2px 0 #ff6b6b;
+}
+
+/* Retro border styles */
+.border {
+  border-width: 3px !important;
+  border-color: #2c3e50 !important;
+}
+
+/* Retro color picker styles */
+input[type="color"] {
+  -webkit-appearance: none;
+  padding: 0;
+  border: 3px solid #2c3e50;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0 #2c3e50;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+/* Retro grid styles */
+.grid img {
+  border: 3px solid #2c3e50;
+  box-shadow: 4px 4px 0 #2c3e50;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border: 2px solid #2c3e50;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6b6b;
+  border: 2px solid #2c3e50;
+  border-radius: 6px;
+}
+
+/* Retro loading animation */
+.animate-spin {
+  border-color: #ff6b6b !important;
+  border-width: 4px !important;
+}
